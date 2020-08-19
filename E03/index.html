@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="http://servicios.ver.ucc.mx/procesar.php" method="get" target="_blank">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="nombre">Nombre</label><br/>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre" required><br/>
+            <!-- -->
+            <label for="email">E-mail</label><br/>
+            <input type="email" name="email" id="email" placeholder="E-mail" required><br/>
+            <!-- -->
+            <label for="password">Contraseña</label><br/>
+            <input type="password" name="password" id="password" placeholder="Contraseña" required><br/>
+            <!-- -->
+            <input type="radio" id="m" name="sexo" value="hombre" checked>
+            <label for="m">Hombre</label>
+            <input type="radio" id="f" name="sexo" value="mujer">
+            <label for="f">Mujer</label><br>
+            <!-- -->
+        </fieldset>
+        <fieldset>
+            <legend>Servicio de noticias</legend>
+            <input type="checkbox" name="noticias[]" id="notpol" value="Noticias de política"> <label for="notpol">Noticias de política</label><br/>
+            <input type="checkbox" name="noticias[]" id="notesp" value="Noticias de espectáculos"> <label for="notesp">Noticias de espectáculos</label><br/>
+            <input type="checkbox" name="noticias[]" id="nottec" value="Noticias de tecnología"> <label for="nottec">Noticias de tecnología</label><br/>
+            <!-- -->
+            <label for="entrega">Método de entrega</label><br/>
+            <select name="entrega" id="entrega">
+                <option value="Desde el portal">Desde el portal</option>
+                <option value="Enviar a mi e-mail">Enviar a mi e-mail</option>
+            </select><br/>
+            <!-- -->
+            <label for="obs">Observación</label><br/>
+            <textarea name="obs" id="obs" cols="30" rows="5" style="resize: none"></textarea>
+            <!-- -->
+        </fieldset><br/>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
